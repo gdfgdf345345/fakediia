@@ -61,6 +61,10 @@ enum Diia {
     }
 }
 
+extension Date {
+    func formatted(_ f: DateFormatter) -> String { f.string(from: self) }
+}
+
 /// Glass-поверхня: напівпрозорий білий шар поверх градієнта.
 struct GlassSurface: ViewModifier {
     var radius: CGFloat = 28
