@@ -1,0 +1,25 @@
+name: FakeDiia
+options:
+  bundleIdPrefix: ua.fake
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+targets:
+  FakeDiia:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Core
+      - path: Screens
+      - path: Assets.xcassets
+    info:
+      path: Info.plist
+    settings:
+      base:
+        MARKETING_VERSION: "2.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
