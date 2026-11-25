@@ -7,7 +7,7 @@ struct SplashView: View {
     var body: some View {
         ZStack {
             LinearGradient(
-                colors: [Diia.splashTop, Diia.splashMid, Diia.splashBottom],
+                colors: [Diia.skyTop, Diia.skyMid, Diia.skyBottom],
                 startPoint: .top, endPoint: .bottom
             )
             .ignoresSafeArea()

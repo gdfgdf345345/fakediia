@@ -1,6 +1,5 @@
 import SwiftUI
 
-@mainActor
 final class ToastCenter: ObservableObject {
     @Published var message: String? = nil
     private var hideTask: Task<Void, Never>? = nil
